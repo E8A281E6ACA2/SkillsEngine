@@ -1,6 +1,8 @@
 ---
 name: reference-analysis
 description: Analisa as referências bibliográficas de um texto acadêmico (artigo, resumo expandido, TCC, dissertação etc.) SEMPRE em conjunto com o texto-base que as cita. Use esta skill sempre que o usuário pedir para "analisar as referências", "dizer quais referências são úteis para entender o trabalho", "ver o que falta para o artigo ficar pronto", "preparar pauta de reunião de alinhamento" sobre um texto acadêmico, "avaliar se uma referência/livro/autor cabe no trabalho", ou pedir o link/fonte de uma referência citada. Também ative quando o usuário colar um artigo/resumo expandido e pedir uma leitura crítica do estado do trabalho e da literatura usada. Esta skill NUNCA analisa uma lista de referências isolada sem o texto-base — sempre cruza referência com o papel que ela exerce dentro do argumento do texto.
+metadata:
+  category: study-skills
 ---
 
 # Reference Analysis

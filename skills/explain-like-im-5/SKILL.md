@@ -4,6 +4,8 @@ description: >
   Reescreve qualquer texto técnico em três níveis progressivos de complexidade (bem simples, intermediário,
   técnico completo), para o leitor escolher o nível certo pra ele. Ative quando o usuário disser "explica isso de
   um jeito mais simples", "não entendi, simplifica", ou pedir uma versão mais fácil de um texto técnico.
+metadata:
+  category: study-skills
 ---
 
 # Skill: Explain Like I'm 5

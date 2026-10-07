@@ -4,6 +4,8 @@ description: >
   Gera um mapa conceitual (em texto estruturado ou diagrama mermaid) mostrando como os conceitos de um tema ou
   capítulo se conectam entre si. Ative quando o usuário disser "monta um mapa conceitual disso", "quero ver como
   esses conceitos se relacionam", ou pedir uma visão geral visual de um tema.
+metadata:
+  category: study-skills
 ---
 
 # Skill: Concept Map Builder

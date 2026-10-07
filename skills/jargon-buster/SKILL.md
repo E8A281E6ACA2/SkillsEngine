@@ -4,6 +4,8 @@ description: >
   Dado um texto de uma área nova para o usuário, extrai só os termos técnicos desconhecidos e explica cada um de
   forma curta, sem reescrever o texto inteiro. Ative quando o usuário disser "não conheço esses termos", "explica
   o jargão desse texto", ou colar um texto técnico de área desconhecida pedindo esclarecimento pontual.
+metadata:
+  category: study-skills
 ---
 
 # Skill: Jargon Buster

@@ -5,6 +5,8 @@ description: >
   pontos fortes, fracos e perguntas que um avaliador levantaria. Ative quando o usuário disser "revisa meu
   trabalho como se fosse um avaliador", "que perguntas uma banca faria sobre isso", ou pedir feedback crítico em
   um texto acadêmico.
+metadata:
+  category: study-skills
 ---
 
 # Skill: Peer Review Lens

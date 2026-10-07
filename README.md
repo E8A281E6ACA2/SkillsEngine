@@ -4,33 +4,26 @@
 
 ## 结构
 
-每个 skill 一个文件夹，只含一个 `SKILL.md`（frontmatter 声明名称和描述，正文是给 AI 的指令）：
+每个 skill 一个文件夹、**直接位于 `skills/` 下**，只含一个 `SKILL.md`。分类通过 frontmatter 的 `metadata.category` 标记，**不建物理子目录**：
 
+| 分类 | skills |
+|------|--------|
+| commit | `quick-commit` |
+| paper | `paper-summary`、`paper-cite` |
+| automation | `auto-test`、`auto-doc` |
+| **study-skills**（学术学习） | `resume-university`、`flashcard-forge`、`explain-like-im-5`、`concept-map-builder`、`study-sprint`、`reading-pace-planner`、`citation-untangler`、`reference-analysis`、`peer-review-lens`、`lecture-to-outline`、`jargon-buster`、`wrong-answer-log`、`science-practice` |
+
+```markdown
+---
+name: flashcard-forge
+description: ...
+metadata:
+  category: study-skills
+---
 ```
-skills/
-├── 快速提交
-│   └── quick-commit/  # Conventional Commits 规范的 commit message
-├── 论文写作（原有）
-│   ├── paper-summary/ # 论文要点总结
-│   └── paper-cite/    # APA/MLA/IEEE/BibTeX 引用生成
-├── 代码自动化（原有）
-│   ├── auto-test/     # 自动生成测试
-│   └── auto-doc/      # 自动生成文档
-└── 学术学习（新增，来自 claude-skills-academic）
-    ├── resume-university/     # 深度、系统地总结任何学习内容
-    ├── flashcard-forge/       # 任意文本/笔记转问答闪卡
-    ├── explain-like-im-5/     # 三级递进解释复杂概念
-    ├── concept-map-builder/   # 生成概念地图（mermaid）
-    ├── study-sprint/          # 课程大纲/书单 → 学习日程表
-    ├── reading-pace-planner/  # 长书/PDF → 每日阅读计划
-    ├── citation-untangler/    # 整理混乱的参考文献
-    ├── reference-analysis/    # 结合正文分析参考文献质量
-    ├── peer-review-lens/     # 以审稿人视角给学术写作提意见
-    ├── lecture-to-outline/   # 讲座录音/转写 → 层级大纲
-    ├── jargon-buster/        # 提取并解释陌生领域术语
-    ├── wrong-answer-log/      # 从错题中生成错误日志
-    └── science-practice/      # 用科学证据支撑决策与计划
-```
+
+> **为什么不建 `study-skills/` 物理子目录**：实测（`claude -p "/skills"`）Claude Code **只加载 `~/.claude/skills/` 的直接子目录**，嵌套在分类文件夹里的 skill 不会被发现。Codex 与 opencode 支持递归扫描，但为了三个工具一致可用，统一采用扁平结构 + `metadata.category` 标签做分类。
+
 
 ## 加载方式
 
@@ -68,8 +61,9 @@ New-Item -ItemType Junction -Path "$HOME\.agents\skills" -Target "<本仓库路�
    给 AI 的指令正文...
    ```
 
-3. `name` 必须与目录名一致（opencode 会强制校验），`description` 为必填
-4. `git add . && git commit` 即可，无需任何注册/索引步骤。
+3. 可选：用 `metadata.category` 给 skill 打分类标签（如 `study-skills`、`paper`）
+4. `name` 必须与目录名一致（opencode 会强制校验），`description` 为必填
+5. `git add . && git commit` 即可，无需任何注册/索引步骤。
 
 ## 写作要点
 

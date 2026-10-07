@@ -2,6 +2,8 @@
 name: science-practice
 description: >
   Fundamenta qualquer estratégia, plano, app, produto ou decisão com evidências científicas reais — artigos, papers, teorias e frameworks acadêmicos de áreas como gestão, psicologia organizacional, economia comportamental, inovação e empreendedorismo. Use esta skill SEMPRE que o usuário mencionar "Science Practice", pedir que algo seja embasado cientificamente, quiser validar uma ideia com literatura acadêmica, ou quando estiver construindo um plano, produto, negócio ou sistema que se beneficiaria de fundamentos teóricos sólidos. Ative também quando ele usar termos como "base científica", "artigos", "evidências", "literatura", "papers", "embasamento acadêmico" ou variações.
+metadata:
+  category: study-skills
   ---
 
   # Science Practice Skill

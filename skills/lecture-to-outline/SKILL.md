@@ -4,6 +4,8 @@ description: >
   Transforma a gravação ou transcrição de uma aula/palestra em um outline hierárquico navegável, com tópicos e
   subtópicos na ordem em que foram apresentados. Ative quando o usuário disser "organiza essa transcrição de aula",
   "transforma essa gravação em um resumo estruturado", ou colar uma transcrição pedindo organização.
+metadata:
+  category: study-skills
 ---
 
 # Skill: Lecture to Outline

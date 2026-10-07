@@ -4,6 +4,8 @@ description: >
   Divide um livro ou PDF longo em blocos diários de leitura até uma data-alvo, respeitando o ritmo de leitura e o
   tempo disponível informados pelo usuário. Ative quando o usuário disser "quero terminar esse livro até tal data",
   "monta um plano de leitura", ou informar um material longo com prazo.
+metadata:
+  category: study-skills
 ---
 
 # Skill: Reading Pace Planner

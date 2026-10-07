@@ -4,6 +4,8 @@ description: >
   A partir de exercícios ou provas que o usuário colar com seus erros, monta um diário de erros recorrentes,
   agrupado por tipo de engano, para revisar o que realmente precisa de atenção. Ative quando o usuário disser
   "organiza meus erros dessa prova", "quero ver em que eu mais erro", ou colar exercícios corrigidos com erros.
+metadata:
+  category: study-skills
 ---
 
 # Skill: Wrong Answer Log

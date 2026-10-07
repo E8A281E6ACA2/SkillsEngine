@@ -5,6 +5,8 @@ description: >
   espaçada (spaced repetition) e checkpoints de autoavaliação. Ative quando o usuário colar uma ementa/syllabus,
   pedir "monta um cronograma de estudo pra essa matéria", "organiza minha revisão pra prova", ou "quero estudar isso
   de forma espaçada".
+metadata:
+  category: study-skills
 ---
 
 # Skill: Study Sprint

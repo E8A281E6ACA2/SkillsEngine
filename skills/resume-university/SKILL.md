@@ -2,6 +2,8 @@
 name: resume-university
 description: >
   Resume qualquer conteúdo acadêmico ou assunto de estudo de forma profunda, didática e estratégica, como se o aluno tivesse apenas 4 horas para dominar o tema. Funciona como o melhor professor do mundo: explica com clareza, usa exemplos, analogias, mapas mentais em texto, macetes e no final gera um PDF completo e rico para leitura e revisão. Use esta skill SEMPRE que o usuário mencionar "Resume University", pedir para resumir um assunto para estudar, disser que tem pouco tempo para estudar, quiser entender um tema de forma rápida e profunda, ou enviar tópicos de matérias como biologia, química, história, direito, matemática, concursos, vestibular, ou qualquer área do conhecimento. Ative também quando ele disser "me explica isso", "preciso aprender X rápido", "tenho prova sobre X", "quero dominar X", "resume isso pra mim" ou variações. Nunca produza um resumo raso — sempre gere um material completo e didático.
+metadata:
+  category: study-skills
   ---
 
   # Resume University 🎓

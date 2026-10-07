@@ -4,6 +4,8 @@ description: >
   Organiza e formata referências bibliográficas soltas e inconsistentes em um estilo de citação escolhido (ABNT,
   APA, Vancouver etc.), identificando e sinalizando informações faltantes. Ative quando o usuário disser "organiza
   minhas referências", "formata essa bibliografia em ABNT/APA", ou colar uma lista de referências bagunçada.
+metadata:
+  category: study-skills
 ---
 
 # Skill: Citation Untangler

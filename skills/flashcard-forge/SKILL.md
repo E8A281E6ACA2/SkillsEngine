@@ -4,6 +4,8 @@ description: >
   Transforma qualquer texto, PDF ou anotação em um baralho de flashcards (pergunta/resposta), pronto para estudo
   por repetição. Ative quando o usuário disser "transforma isso em flashcards", "monta um baralho de estudo pra
   esse conteúdo", ou colar/anexar material pedindo cartões de pergunta e resposta.
+metadata:
+  category: study-skills
 ---
 
 # Skill: Flashcard Forge
