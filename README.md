@@ -4,27 +4,29 @@
 
 ## 结构
 
-每个 skill 一个文件夹、**直接位于 `skills/` 下**，只含一个 `SKILL.md`。分类通过 frontmatter 的 `metadata.category` 标记，**不建物理子目录**：
-
-| 分类 | skills |
-|------|--------|
-| commit | `quick-commit` |
-| paper | `paper-summary`、`paper-cite` |
-| automation | `auto-test`、`auto-doc` |
-| **study-skills**（学术学习） | `resume-university`、`flashcard-forge`、`explain-like-im-5`、`concept-map-builder`、`study-sprint`、`reading-pace-planner`、`citation-untangler`、`reference-analysis`、`peer-review-lens`、`lecture-to-outline`、`jargon-buster`、`wrong-answer-log`、`science-practice` |
-
-```markdown
----
-name: flashcard-forge
-description: ...
-metadata:
-  category: study-skills
----
+```
+SkillsEngine/
+├── skills/         # 生效中的 skills（junction 分发给 Claude Code / Codex / opencode）
+└── study-skills/   # 学习区：优秀 skill 范例，用于研究怎么写 skill（不参与加载）
 ```
 
-> **为什么不建 `study-skills/` 物理子目录**：实测（`claude -p "/skills"`）Claude Code **只加载 `~/.claude/skills/` 的直接子目录**，嵌套在分类文件夹里的 skill 不会被发现。Codex 与 opencode 支持递归扫描，但为了三个工具一致可用，统一采用扁平结构 + `metadata.category` 标签做分类。
+### skills/（生效中，5 个）
 
-学术学习类的浏览索引见 **[`study-skills/README.md`](./study-skills/README.md)**（仅索引，不含 skill）。
+每个 skill 一个文件夹、**直接位于 `skills/` 下**，只含一个 `SKILL.md`：
+
+| Skill | 用途 |
+|-------|------|
+| `quick-commit` | Conventional Commits 规范的 commit message |
+| `paper-summary` | 论文要点总结 |
+| `paper-cite` | APA/MLA/IEEE/BibTeX 引用生成 |
+| `auto-test` | 自动生成测试 |
+| `auto-doc` | 自动生成文档 |
+
+### study-skills/（学习参考，13 个）
+
+收藏学术学习类 skill 作为写法范例，**刻意放在 `skills/` 之外**，因此不会被工具加载。清单见 [study-skills/README.md](./study-skills/README.md)。
+
+> **为什么生效的 skill 必须扁平放 `skills/`**：实测（`claude -p`）Claude Code **只加载 `~/.claude/skills/` 的直接子目录**，嵌套在分类文件夹里的 skill 不会被发现。Codex 与 opencode 虽支持递归扫描，但为保持三工具一致，`skills/` 下不放分类子目录——要放**不生效**的范例，就放到 `study-skills/`。
 
 
 ## 加载方式

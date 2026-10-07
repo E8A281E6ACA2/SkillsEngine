@@ -1,64 +1,61 @@
-# study-skills — 学术学习 Skills 索引
+# study-skills — skill 写法学习区
 
-本目录**不是** skill 本身，而是学术学习类 skill 的**分组索引**，便于浏览和学习。
+这里存放**优秀 skill 范例**，用来研究「怎么写好一个 skill」。**这些不是生效的 skill**。
 
-> 为什么 skill 不放在这里：实测 Claude Code 只加载 `~/.claude/skills/` 的**直接子目录**，嵌套在分类子目录里的 skill 不会被发现（详见 [README 结构说明](../README.md)）。因此所有 skill 物理上都在顶层 `skills/`，分类仅通过 `metadata.category: study-skills` 标记。
+## 为什么放在这里就不生效
 
-## 学术学习类 Skills（13 个）
+生效的 skill 必须**直接位于 `skills/`**（junction 分发到 `~/.claude/skills` 等）。Claude Code 经实测**只扫描直接子目录**，`study-skills/<名字>/SKILL.md` 不会被任何工具发现——所以这里可以安全地堆放范例，不干扰实际使用的 skill。
 
-来源：[claude-skills-academic](https://github.com/Viniciusvcgprofssional/claude-skills-academic)（Agent Skills 标准格式）
+```
+SkillsEngine/
+├── skills/         # 生效中：被三个工具加载
+└── study-skills/   # 学习区：只阅读，不加载
+    ├── README.md   ← 本文件
+    └── <名字>/SKILL.md   ← 13 个学术学习类范例
+```
+
+## 范例清单（13 个，来自 claude-skills-academic）
 
 ### 学习与理解
-
 | Skill | 用途 |
 |-------|------|
 | `resume-university` | 深度、系统地总结任何学习内容（像上一门课那样讲透） |
-| `explain-like-im-5` | 用三级递进的复杂度解释一个技术概念（从零基础到专业） |
-| `concept-map-builder` | 生成概念地图，展示知识点之间的关系（文字或 mermaid 图） |
-| `jargon-buster` | 从陌生领域的文本中提取专业术语并逐一解释 |
+| `explain-like-im-5` | 三级递进式解释一个概念（零基础 → 专业） |
+| `concept-map-builder` | 生成概念地图（文字或 mermaid 图） |
+| `jargon-buster` | 提取陌生领域术语并逐一解释 |
 
 ### 计划与复习
-
 | Skill | 用途 |
 |-------|------|
-| `study-sprint` | 把课程大纲 / 书单 / 学科计划转成学习日程表 |
-| `reading-pace-planner` | 把长书 / PDF 按目标日期拆成每日阅读计划 |
-| `flashcard-forge` | 把任意文本 / PDF / 笔记转成问答闪卡（间隔复习） |
-| `wrong-answer-log` | 从做错的习题 / 考试中生成错题日志，定位薄弱点 |
+| `study-sprint` | 课程大纲 / 书单 → 学习日程表 |
+| `reading-pace-planner` | 长书 / PDF → 每日阅读计划 |
+| `flashcard-forge` | 文本 / PDF / 笔记 → 问答闪卡 |
+| `wrong-answer-log` | 错题 / 考试 → 错题日志 |
 
 ### 学术写作与研究
-
 | Skill | 用途 |
 |-------|------|
-| `citation-untangler` | 把杂乱、不一致的参考文献整理成统一引用格式 |
-| `reference-analysis` | 结合正文，分析参考文献的质量与作用、找出缺口 |
-| `peer-review-lens` | 以审稿人视角，对论文 / 综述 / 毕设给出结构化意见 |
-| `lecture-to-outline` | 把讲座录音 / 转写稿整理成层级大纲 |
-| `science-practice` | 用科学证据支撑某个策略、计划或决策 |
+| `citation-untangler` | 整理杂乱、不一致的参考文献 |
+| `reference-analysis` | 结合正文分析参考文献的质量与缺口 |
+| `peer-review-lens` | 审稿人视角给论文 / 综述结构化意见 |
+| `lecture-to-outline` | 讲座录音 / 转写稿 → 层级大纲 |
+| `science-practice` | 用科学证据支撑策略 / 计划 / 决策 |
 
-## 调用方式
+## 学写 skill 时重点看什么
 
-| 工具 | 用法 |
-|------|------|
-| Claude Code | `/resume-university`、`/flashcard-forge` … |
-| Codex (GPT) | `$resume-university` 或 `/skills` |
-| opencode | 直接用自然语言描述任务，由 agent 自动调用 |
+1. **frontmatter 极简**：基本只有 `name` + `description`；`name` 必须与目录名一致（opencode 强制校验）。可选字段：`license`、`compatibility`、`metadata`。
+2. **`description` 是灵魂**：这是工具判断“何时调用”的唯一依据。范例里常写成「做什么 + 何时触发」，并直接写入用户会说的触发短语。
+3. **正文结构**：目标 → 步骤 / 流程 → 输出格式 → 示例，条理清晰。
+4. **篇幅**：多数 40～150 行，**一个 skill 只干一件事**。
+5. **渐进披露**：长资料拆成同目录的引用文件，正文只留主干。
 
-## 新增学术 skill
+## 把范例变成生效的 skill
 
-1. 在 `skills/<名字>/SKILL.md` 新建（顶层，不放进本目录）
-2. frontmatter 加分类标签：
+```powershell
+git mv study-skills/<名字> skills/<名字>   # 移进生效目录
+```
 
-   ```markdown
-   ---
-   name: <名字>
-   description: 做什么 + 什么时候用
-   metadata:
-     category: study-skills
-   ---
-   ```
-
-3. 在上面的表格里补一行索引
+然后（可选）：删掉 frontmatter 里的 `metadata.category`、把 `description` 改成中文贴合自己习惯。`git commit` 后**即时生效**（junction 已在），无需重启。
 
 ## 参考
 
