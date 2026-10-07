@@ -8,11 +8,28 @@
 
 ```
 skills/
-├── auto-doc/       # 自动生成代码文档（jsdoc/tsdoc/sphinx）
-├── auto-test/      # 自动生成单元/集成测试
-├── paper-cite/     # 生成论文引用（APA/MLA/IEEE/BibTeX）
-├── paper-summary/  # 论文要点总结
-└── quick-commit/   # 生成 Conventional Commits 规范的 commit message
+├── 快速提交
+│   └── quick-commit/  # Conventional Commits 规范的 commit message
+├── 论文写作（原有）
+│   ├── paper-summary/ # 论文要点总结
+│   └── paper-cite/    # APA/MLA/IEEE/BibTeX 引用生成
+├── 代码自动化（原有）
+│   ├── auto-test/     # 自动生成测试
+│   └── auto-doc/      # 自动生成文档
+└── 学术学习（新增，来自 claude-skills-academic）
+    ├── resume-university/     # 深度、系统地总结任何学习内容
+    ├── flashcard-forge/       # 任意文本/笔记转问答闪卡
+    ├── explain-like-im-5/     # 三级递进解释复杂概念
+    ├── concept-map-builder/   # 生成概念地图（mermaid）
+    ├── study-sprint/          # 课程大纲/书单 → 学习日程表
+    ├── reading-pace-planner/  # 长书/PDF → 每日阅读计划
+    ├── citation-untangler/    # 整理混乱的参考文献
+    ├── reference-analysis/    # 结合正文分析参考文献质量
+    ├── peer-review-lens/     # 以审稿人视角给学术写作提意见
+    ├── lecture-to-outline/   # 讲座录音/转写 → 层级大纲
+    ├── jargon-buster/        # 提取并解释陌生领域术语
+    ├── wrong-answer-log/      # 从错题中生成错误日志
+    └── science-practice/      # 用科学证据支撑决策与计划
 ```
 
 ## 加载方式
