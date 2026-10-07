@@ -1,42 +1,35 @@
 ---
 name: reading-pace-planner
 description: >
-  Divide um livro ou PDF longo em blocos diários de leitura até uma data-alvo, respeitando o ritmo de leitura e o
-  tempo disponível informados pelo usuário. Ative quando o usuário disser "quero terminar esse livro até tal data",
-  "monta um plano de leitura", ou informar um material longo com prazo.
+  把一本书或长篇 PDF 拆分成每日阅读区块，直到目标日期，同时遵循用户提供的阅读速度和可用时间。
+  当用户说"我想在某日期前读完这本书""做个阅读计划"，或提供一份有时间限制的长篇材料时触发。
 metadata:
   category: study-skills
 ---
 
-# Skill: Reading Pace Planner
+# Skill: Reading Pace Planner（阅读进度规划器）
 
-## Visão geral
+## 概述
 
-Livros e PDFs longos costumam ser abandonados não por falta de interesse, mas por falta de um plano realista de
-quando ler cada parte. A skill divide o material em blocos diários/semanais até a data-alvo, respeitando quanto
-tempo o usuário realmente tem disponível.
+长书和长篇 PDF 被放弃，往往不是因为缺乏兴趣，而是因为缺少一个现实可行的"何时读哪部分"的计划。本 skill 把材料拆成每日/每周区块直到目标日期，并遵循用户真正可用的时间。
 
-## Passo 1 — Levantar os parâmetros
+## 步骤 1 — 收集参数
 
-Confirme: tamanho do material (páginas/capítulos), data-alvo, e quanto tempo por dia/semana o usuário tem
-disponível para ler.
+确认：材料规模（页数/章节数）、目标日期，以及用户每天/每周可用于阅读的时间。
 
-## Passo 2 — Calcular o ritmo necessário
+## 步骤 2 — 计算所需速度
 
-Calcule quantas páginas/capítulos por sessão são necessários para terminar na data, e avise claramente se o ritmo
-exigido é irreal para o tempo disponível informado, em vez de gerar um plano impossível de seguir.
+算出要在截止日前读完，每次需要读多少页/章；如果所需速度对给定的可用时间不现实，要明确告知，而不是生成一个根本无法执行的计划。
 
-## Passo 3 — Respeitar a estrutura do material
+## 步骤 3 — 尊重材料结构
 
-Divida por capítulo ou seção sempre que possível, evitando cortar no meio de uma unidade lógica só para bater a
-página exata calculada.
+尽量按章节或小节切分，避免为了凑准计算出的页码而在一个逻辑单元中间切断。
 
-## Passo 4 — Entregar o plano
+## 步骤 4 — 交付计划
 
-Apresente como um calendário com o que ler em cada sessão, e ofereça lembrar cada bloco por scheduled task se o
-usuário quiser esse acompanhamento.
+以日历形式呈现每次要读的内容；若用户想要这种自动提醒，可提供用定时任务提醒每个区块的功能。
 
-## Coisas que esta skill nunca faz
+## 这个 skill 从不做的事
 
-- Nunca esconde que o ritmo calculado é inviável — avisa e sugere um novo prazo ou mais tempo por sessão.
-- Nunca assume o mesmo ritmo de leitura para materiais de dificuldade muito diferente sem perguntar.
+- 从不隐瞒算出的进度不可行——它会提醒，并建议新的截止日期或增加每次时长。
+- 从不在未询问的情况下，对难度差异极大的材料套用相同的阅读速度。

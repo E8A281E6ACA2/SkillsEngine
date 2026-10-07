@@ -1,41 +1,35 @@
 ---
 name: explain-like-im-5
 description: >
-  Reescreve qualquer texto técnico em três níveis progressivos de complexidade (bem simples, intermediário,
-  técnico completo), para o leitor escolher o nível certo pra ele. Ative quando o usuário disser "explica isso de
-  um jeito mais simples", "não entendi, simplifica", ou pedir uma versão mais fácil de um texto técnico.
+  把任何技术性文本改写成三个递进的复杂度层级（非常通俗、中等、完整技术版），让读者选择适合自己的层级。
+  当用户说"讲得简单点""没看懂，简化一下"，或要求某段技术文字的通俗版本时触发。
 metadata:
   category: study-skills
 ---
 
-# Skill: Explain Like I'm 5
+# Skill: Explain Like I'm 5（由浅入深解释）
 
-## Visão geral
+## 概述
 
-Nem todo mundo precisa (ou consegue, na primeira leitura) do nível técnico completo de um assunto. A skill pega um
-texto técnico e gera três versões da mesma explicação, cada uma mantendo a informação correta — a diferença é o
-vocabulário e a quantidade de pré-requisito assumido, não o conteúdo em si.
+不是每个人都需要（或第一遍就能读懂）一个话题的完整技术版本。本 skill 拿一段技术文本，生成同一解释的三个版本，每个版本都保持信息正确——区别只在于用词和默认的预备知识量，而不是内容本身。
 
-## Passo 1 — Identificar a ideia central
+## 步骤 1 — 找出核心思想
 
-Antes de simplificar, isole qual é a ideia central que precisa sobreviver em qualquer nível de explicação — perder
-essa ideia central pra simplificar demais é o erro mais comum desse tipo de reescrita.
+在简化之前，先确认那个在任何解释层级都必须保留的核心思想——为了过度简化而弄丢核心思想，是这类改写最常见的错误。
 
-## Passo 2 — Gerar o nível 1 (bem simples)
+## 步骤 2 — 生成第 1 层（非常通俗）
 
-Explique usando analogias do cotidiano e vocabulário comum, sem jargão nenhum, como se fosse a primeira vez que a
-pessoa ouve falar do assunto.
+用日常生活中的类比和通俗词汇来解释，完全不用术语，就像对方第一次听说这个话题。
 
-## Passo 3 — Gerar o nível 2 (intermediário)
+## 步骤 3 — 生成第 2 层（中等）
 
-Reintroduza os termos técnicos principais, mas ainda com explicação de cada um na primeira aparição.
+重新引入主要技术术语，但每个术语首次出现时仍附上解释。
 
-## Passo 4 — Gerar o nível 3 (técnico completo)
+## 步骤 4 — 生成第 3 层（完整技术版）
 
-Mantenha a precisão e o vocabulário técnico esperado de alguém que já estuda a área, sem simplificação.
+保持该领域学习者应有的精确性和技术词汇，不做简化。
 
-## Coisas que esta skill nunca faz
+## 这个 skill 从不做的事
 
-- Nunca simplifica a ponto de a explicação ficar tecnicamente errada — simplificar é remover detalhe, não distorcer
-  o conceito.
-- Nunca assume que o nível mais simples é "menos válido" — cada nível é completo para seu público.
+- 从不简化到技术上出错的程度——简化是删减细节，不是扭曲概念。
+- 从不认为最简单的层级"价值更低"——每个层级对其目标读者都是完整的。

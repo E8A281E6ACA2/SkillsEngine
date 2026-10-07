@@ -1,41 +1,35 @@
 ---
 name: lecture-to-outline
 description: >
-  Transforma a gravação ou transcrição de uma aula/palestra em um outline hierárquico navegável, com tópicos e
-  subtópicos na ordem em que foram apresentados. Ative quando o usuário disser "organiza essa transcrição de aula",
-  "transforma essa gravação em um resumo estruturado", ou colar uma transcrição pedindo organização.
+  把一节课/一场讲座的录音或转写稿，整理成可导航的层级大纲，主次标题按演讲呈现的顺序排列。
+  当用户说"整理一下这节课的转写稿""把这段录音变成结构化摘要"，或粘贴一份转写稿要求整理时触发。
 metadata:
   category: study-skills
 ---
 
-# Skill: Lecture to Outline
+# Skill: Lecture to Outline（讲座转大纲）
 
-## Visão geral
+## 概述
 
-Aulas e palestras são lineares e cheias de digressões — o outline organiza tudo em uma estrutura hierárquica que dá
-pra escanear rapidamente antes de uma prova ou revisão, sem perder a ordem lógica em que os assuntos foram
-encadeados pelo professor/palestrante.
+课堂和讲座是线性的、充满题外话——本 skill 把内容整理成层级结构，方便在考试或复习前快速浏览，同时不丢失讲者串联各知识点的逻辑顺序。
 
-## Passo 1 — Segmentar por assunto
+## 步骤 1 — 按主题分段
 
-Leia a transcrição e identifique onde um assunto termina e outro começa, mesmo que o professor não tenha marcado
-isso explicitamente.
+阅读转写稿，找出一个主题结束、另一个主题开始的位置，即使讲者并未明确标出。
 
-## Passo 2 — Montar a hierarquia
+## 步骤 2 — 建立层级
 
-Para cada segmento, gere um tópico principal e, abaixo dele, os subtópicos e exemplos citados, mantendo a
-granularidade proporcional à importância dada pelo professor (mais tempo de fala = mais detalhe no outline).
+对每个段落生成一个主标题，其下是提到的子话题和例子；细节程度与讲者所给的重视程度成正比（讲得越久，大纲里写得越细）。
 
-## Passo 3 — Marcar digressões separadamente
+## 步骤 3 — 单独标记题外话
 
-Se a aula tiver digressões (respostas de perguntas, tangentes) que não fazem parte do fio principal, marque-as à
-parte no outline em vez de misturar com o conteúdo central.
+如果课上有题外话（回答问题、跑题），将其单独标注在大纲之外，而不是与核心内容混在一起。
 
-## Passo 4 — Entregar navegável
+## 步骤 4 — 交付可导航的版本
 
-Entregue como outline com numeração/indentação clara, pronto para virar sumário de estudo.
+以编号/缩进清晰的大纲交付，可直接用作学习目录。
 
-## Coisas que esta skill nunca faz
+## 这个 skill 从不做的事
 
-- Nunca corrige ou reinterpreta o conteúdo dito pelo professor — organiza o que foi dito, não valida se está certo.
-- Nunca omite uma parte relevante da aula só para deixar o outline mais curto.
+- 从不纠正或重新诠释讲者所述的内容——它只整理所讲内容，不判断对错。
+- 从不为了让大纲更短而省略课堂中相关的部分。

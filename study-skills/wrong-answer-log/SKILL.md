@@ -1,41 +1,35 @@
 ---
 name: wrong-answer-log
 description: >
-  A partir de exercícios ou provas que o usuário colar com seus erros, monta um diário de erros recorrentes,
-  agrupado por tipo de engano, para revisar o que realmente precisa de atenção. Ative quando o usuário disser
-  "organiza meus erros dessa prova", "quero ver em que eu mais erro", ou colar exercícios corrigidos com erros.
+  根据用户粘贴的、含错题的练习或试卷，生成一份按错误类型分组的错题日志，用于复习真正需要关注的地方。
+  当用户说"整理一下我这次考试的错题""我想看看我最常错在哪"，或粘贴带错误的已批改练习时触发。
 metadata:
   category: study-skills
 ---
 
-# Skill: Wrong Answer Log
+# Skill: Wrong Answer Log（错题日志）
 
-## Visão geral
+## 概述
 
-A maioria das pessoas revisa o que já sabe e evita o que errou. Esta skill inverte isso: lê os erros que o usuário
-colar (de provas, exercícios, simulados) e organiza por padrão — não é uma lista de "questão 3 errada", é um
-diagnóstico de que *tipo* de erro se repete (conceito mal entendido, distração, cálculo, interpretação).
+大多数人复习已经会的，回避做错的。本 skill 反其道而行：阅读用户粘贴的错题（来自考试、练习、模拟），按规律整理——它不是"第 3 题错了"这种清单，而是对**哪种**错误在重复出现的诊断（概念没懂、粗心、计算出错、理解偏差）。
 
-## Passo 1 — Ler os erros informados
+## 步骤 1 — 阅读所提供的错题
 
-Peça o exercício/questão, a resposta dada e a resposta correta, se ainda não vierem juntos.
+索取题目、用户给出的答案和正确答案（若尚未一并提供）。
 
-## Passo 2 — Classificar o tipo de erro
+## 步骤 2 — 归类错误类型
 
-Para cada erro, classifique a causa mais provável: falta de conceito, erro de cálculo/execução, interpretação
-errada do enunciado, ou distração. Quando não for claro, pergunte em vez de supor.
+对每个错误，判断最可能的原因：概念缺失、计算/执行错误、对题干的错误理解，或粗心。判断不清时就提问，而不是臆测。
 
-## Passo 3 — Agrupar por padrão
+## 步骤 3 — 按规律分组
 
-Agrupe os erros por tipo e por tema, para revelar se o problema real é "não domino esse assunto" ou "erro sempre da
-mesma forma boba em qualquer assunto".
+按类型和主题把错题分组，从而揭示真正的问题是"这个知识点没掌握"还是"在任何知识点上都犯同样的低级错误"。
 
-## Passo 4 — Sugerir o que revisar primeiro
+## 步骤 4 — 建议优先复习什么
 
-A partir do agrupamento, aponte os 2-3 padrões que, se corrigidos, teriam mais impacto na nota — não trata todo
-erro como igualmente importante.
+基于分组，指出 2-3 个"若改正则对分数提升最大"的规律——不把每个错误都视为同等重要。
 
-## Coisas que esta skill nunca faz
+## 这个 skill 从不做的事
 
-- Nunca julga o desempenho do usuário — o tom é sempre de diagnóstico útil, nunca de cobrança.
-- Nunca classifica a causa do erro sem informação suficiente — pergunta em vez de adivinhar.
+- 从不评判用户的成绩——语气始终是"有用的诊断"，绝非责备。
+- 从不在信息不足时判定错误原因——提问而不是猜测。

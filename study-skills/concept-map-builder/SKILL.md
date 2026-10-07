@@ -1,42 +1,35 @@
 ---
 name: concept-map-builder
 description: >
-  Gera um mapa conceitual (em texto estruturado ou diagrama mermaid) mostrando como os conceitos de um tema ou
-  capítulo se conectam entre si. Ative quando o usuário disser "monta um mapa conceitual disso", "quero ver como
-  esses conceitos se relacionam", ou pedir uma visão geral visual de um tema.
+  生成一张概念地图（结构化文本或 mermaid 图），展示某个主题或章节中各个概念之间如何相互连接。
+  当用户说"给这个做个概念地图""我想看看这些概念之间的关系"，或要求对一个主题做可视化总览时触发。
 metadata:
   category: study-skills
 ---
 
-# Skill: Concept Map Builder
+# Skill: Concept Map Builder（概念地图构建器）
 
-## Visão geral
+## 概述
 
-Um mapa conceitual mostra relações que um resumo em texto corrido esconde: o que depende do quê, o que é oposto ao
-quê, o que é caso particular de um conceito mais geral. A skill lê o material e monta esse mapa, priorizando as
-relações mais importantes para entender o tema como um todo, não listando conceitos soltos.
+概念地图能揭示流水账式摘要所掩盖的关系：什么依赖什么、什么与什么相反、什么是一般概念的个例。本 skill 阅读材料后构建这张地图，优先呈现对整体理解最重要的关系，而不是罗列孤立的概念。
 
-## Passo 1 — Extrair os conceitos centrais
+## 步骤 1 — 提取核心概念
 
-Identifique de 6 a 15 conceitos centrais do material — nem tão poucos que percam nuance, nem tantos que o mapa
-fique ilegível.
+从材料中找出 6 到 15 个核心概念——不能太少以致丢失细节，也不能太多以致地图无法阅读。
 
-## Passo 2 — Definir as relações
+## 步骤 2 — 定义关系
 
-Para cada par de conceitos relacionados, defina o tipo de relação (depende de, é oposto a, é exemplo de, causa,
-é parte de) — relações vagas tipo "se relaciona com" devem ser evitadas ou especificadas melhor.
+对每一对相关的概念，明确关系类型（依赖于、相反于、是……的例子、导致、是……的一部分）——避免"与……有关"这种含糊关系，要么去掉，要么写得更具体。
 
-## Passo 3 — Montar o mapa
+## 步骤 3 — 绘制地图
 
-Gere o mapa como diagrama mermaid (quando o formato de saída suportar) ou como uma lista hierárquica de relações
-quando não suportar, sempre legível sem precisar de ferramenta externa.
+以 mermaid 图输出（当输出格式支持时），或在格式不支持时以层级化的关系列表输出，始终保证无需外部工具即可阅读。
 
-## Passo 4 — Explicar as relações não óbvias
+## 步骤 4 — 解释不显然的关系
 
-Depois do mapa, destaque em 2-3 frases as relações menos óbvias que ele revela, para o usuário não passar batido
-pelo insight mais útil do mapa.
+在地图之后，用 2-3 句话点出地图揭示出的、不太显眼的关系，避免用户错过其中最有价值的洞见。
 
-## Coisas que esta skill nunca faz
+## 这个 skill 从不做的事
 
-- Nunca cria relação entre conceitos que não existe de fato só para o mapa parecer mais rico.
-- Nunca substitui o material original — é um resumo visual, não a fonte completa.
+- 从不为了地图显得更丰富而编造实际不存在的概念关系。
+- 从不取代原始材料——它只是可视化摘要，不是完整原文。

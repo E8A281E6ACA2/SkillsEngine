@@ -1,59 +1,44 @@
 ---
 name: study-sprint
 description: >
-  Transforma uma ementa, lista de leitura ou plano de disciplina em um cronograma de estudo com blocos de revisão
-  espaçada (spaced repetition) e checkpoints de autoavaliação. Ative quando o usuário colar uma ementa/syllabus,
-  pedir "monta um cronograma de estudo pra essa matéria", "organiza minha revisão pra prova", ou "quero estudar isso
-  de forma espaçada".
+  把一份课程大纲、阅读书单或学科计划，转换成带有间隔重复复习区块和自我评估检查点的学习日程表。
+  当用户粘贴大纲/教学计划，或说"给这门课排个学习日程""帮我安排考前复习""我想用间隔重复的方式学这个"时触发。
 metadata:
   category: study-skills
 ---
 
-# Skill: Study Sprint
+# Skill: Study Sprint（学习冲刺）
 
-## Visão geral
+## 概述
 
-Study Sprint pega qualquer lista de tópicos, ementa de disciplina ou plano de leitura que o usuário colar ou anexar,
-e devolve um cronograma de estudo real: quando estudar cada tópico pela primeira vez, quando revisá-lo de novo
-(usando os intervalos clássicos de repetição espaçada — 1 dia, 3 dias, 7 dias, 16 dias, 35 dias), e um checkpoint
-curto de autoavaliação em cada revisão. O objetivo é resolver um problema universal de qualquer estudante: saber
-*quais tópicos existem* é fácil, organizar *quando revisar cada um* para não esquecer é o que normalmente falta.
+Study Sprint 接收用户粘贴或上传的任何主题清单、课程大纲或阅读计划，产出一份真正可执行的学习日程：每个主题何时第一次学、何时再复习（使用经典的间隔重复间隔——1 天、3 天、7 天、16 天、35 天），以及每次复习时一段简短的自我评估检查点。它要解决的是每个学生都面临的普遍问题：知道*有哪些主题*很容易，而安排好*每个主题何时复习*以免遗忘，才是通常所缺的一环。
 
-## Passo 1 — Entender o material
+## 步骤 1 — 理解材料
 
-Peça (se não vier junto) a ementa/lista de tópicos, quantos dias até a prova ou objetivo final, e quantas horas por
-dia a pessoa tem disponíveis para estudar. Quanto mais claro o prazo, mais preciso o cronograma.
+（如果未一并提供）索取：大纲/主题清单、距离考试或最终目标还有多少天，以及每天可用于学习的时长。截止日期越明确，日程就越精确。
 
-## Passo 2 — Quebrar em tópicos estudáveis
+## 步骤 2 — 拆成可学习的主题
 
-Divida o conteúdo em unidades de estudo de 30-90 minutos cada (nem tão grandes que desanimem, nem tão pequenas que
-percam contexto). Ordene por pré-requisito quando o conteúdo tiver dependência lógica (ex.: conceito base antes de
-aplicação).
+把内容拆成每个 30-90 分钟的学习单元（既不太大以免打击信心，也不太小以免丢失上下文）。当内容存在逻辑依赖时，按先修顺序排列（例：基础概念先于应用）。
 
-## Passo 3 — Montar o cronograma com revisão espaçada
+## 步骤 3 — 用间隔重复排出日程
 
-Para cada tópico, gere:
-- Uma sessão de **primeiro estudo**.
-- Sessões de **revisão** nos intervalos padrão (1, 3, 7, 16, 35 dias após o primeiro estudo, truncando o que passar
-  do prazo final).
-- Um **checkpoint de autoavaliação** de 2-3 perguntas por revisão, para a pessoa testar se realmente lembra, não só
-  reler.
+对每个主题，生成：
+- 一次**初次学习**。
+- 按标准间隔安排的**复习**（初次学习后第 1、3、7、16、35 天，超出最终截止日的部分截断）。
+- 每次复习配一个 2-3 题的**自我评估检查点**，让用户检验自己是否真的记得，而不只是重读。
 
-Apresente o cronograma como uma tabela por data, com o tópico, o tipo de sessão (estudo/revisão) e o checkpoint.
+以按日期排列的表格呈现日程，列出主题、时段类型（学习/复习）和检查点。
 
-## Passo 4 — Ajustar ao tempo disponível
+## 步骤 4 — 适配可用时间
 
-Se o cronograma não couber no tempo/horas disponíveis informados, avise isso claramente ao usuário e priorize os
-tópicos com maior peso na prova/objetivo (se ele informar pesos) em vez de simplesmente cortar em silêncio.
+如果日程无法塞进所给的时间/时长，明确告知用户，并优先安排考试/目标中权重最高的主题（若用户提供了权重），而不是默默删减。
 
-## Passo 5 — Entregar como arquivo
+## 步骤 5 — 以文件形式交付
 
-Gere o cronograma como um documento (markdown ou planilha, conforme o pedido) que o usuário possa salvar e
-acompanhar, e ofereça lembrar cada bloco por scheduled task se o usuário quiser esse acompanhamento automático.
+把日程生成为一份用户可保存和跟踪的文档（markdown 或表格，视要求而定）；若用户想要自动提醒，可提供用定时任务提醒每个区块的功能。
 
-## Coisas que esta skill nunca faz
+## 这个 skill 从不做的事
 
-- Nunca inventa conteúdo da disciplina que não veio da ementa/material fornecido — se faltar informação, pergunta,
-  não preenche com achismo.
-- Nunca assume que o usuário vai seguir o cronograma à risca; se ele voltar dizendo que atrasou, reorganiza a partir
-  de onde ele está, sem julgamento.
+- 从不编造并非来自所提供大纲/材料的学科内容——信息不足就提问，不用臆测填充。
+- 从不假设用户会严格照做日程；如果用户回来说延期了，就从当前所在位置重新安排，不予评判。

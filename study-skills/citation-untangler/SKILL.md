@@ -1,41 +1,36 @@
 ---
 name: citation-untangler
 description: >
-  Organiza e formata referências bibliográficas soltas e inconsistentes em um estilo de citação escolhido (ABNT,
-  APA, Vancouver etc.), identificando e sinalizando informações faltantes. Ative quando o usuário disser "organiza
-  minhas referências", "formata essa bibliografia em ABNT/APA", ou colar uma lista de referências bagunçada.
+  把零散、格式不一致的参考文献整理并格式化为指定的引用样式（ABNT、APA、Vancouver 等），
+  并识别、标注缺失的信息。当用户说"帮我整理参考文献""把这份文献表格式化成 ABNT/APA"，
+  或粘贴了一份混乱的参考文献列表时触发。
 metadata:
   category: study-skills
 ---
 
-# Skill: Citation Untangler
+# Skill: Citation Untangler（引用整理器）
 
-## Visão geral
+## 概述
 
-Referências bibliográficas coletadas ao longo de uma pesquisa costumam vir em formatos diferentes, com peças
-faltando (ano, editora, página). A skill organiza tudo no estilo pedido e, principalmente, é honesta sobre o que
-não deu para completar — nunca inventa dado bibliográfico que não veio do usuário.
+研究过程中一路收集来的参考文献，格式往往各不相同，还经常缺斤少两（缺年份、出版社、页码）。本 skill 会按要求的样式把文献整理好，更重要的是——对"补不齐"的部分保持诚实：绝不编造用户没有提供的文献信息。
 
-## Passo 1 — Ler a lista bruta
+## 步骤 1 — 通读原始列表
 
-Leia as referências como vieram, identificando o tipo de cada uma (livro, artigo, site, capítulo) mesmo que o
-formato esteja inconsistente.
+按原样阅读参考文献，逐条判断其类型（书、期刊论文、网页、章节），即使格式并不统一。
 
-## Passo 2 — Formatar no estilo pedido
+## 步骤 2 — 按指定样式格式化
 
-Reformate cada referência seguindo as regras do estilo escolhido, mantendo consistência entre todas.
+按照所选样式的规则重新格式化每一条，并保证全表风格一致。
 
-## Passo 3 — Sinalizar o que falta
+## 步骤 3 — 标出缺失的信息
 
-Para qualquer referência com dado faltando (ano, página, editora), marque claramente o que falta em vez de omitir
-silenciosamente ou inventar um valor plausível.
+对于任何缺信息的文献（年份、页码、出版社），明确标出缺什么，而不是悄悄省略，也不要填一个看似合理的假值。
 
-## Passo 4 — Entregar organizado
+## 步骤 4 — 整理交付
 
-Entregue a lista final ordenada conforme a convenção do estilo (geralmente alfabética por sobrenome), pronta para
-colar no trabalho.
+按该样式的惯例（通常是按作者姓氏字母序）排序后交付最终列表，可直接粘贴进论文。
 
-## Coisas que esta skill nunca faz
+## 这个 skill 从不做的事
 
-- Nunca inventa ano, página, editora ou qualquer dado bibliográfico que não foi fornecido.
-- Nunca mistura estilos de citação diferentes na mesma lista sem avisar o usuário.
+- 从不编造年份、页码、出版社或任何用户未提供的文献信息。
+- 从不在同一条列表中混用不同引用样式而不提醒用户。

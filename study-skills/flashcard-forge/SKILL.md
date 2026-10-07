@@ -1,43 +1,35 @@
 ---
 name: flashcard-forge
 description: >
-  Transforma qualquer texto, PDF ou anotação em um baralho de flashcards (pergunta/resposta), pronto para estudo
-  por repetição. Ative quando o usuário disser "transforma isso em flashcards", "monta um baralho de estudo pra
-  esse conteúdo", ou colar/anexar material pedindo cartões de pergunta e resposta.
+  把任何文本、PDF 或笔记转换成一套问答闪卡（问题/答案），可直接用于重复记忆学习。
+  当用户说"把这个做成闪卡""给这些内容做一套学习卡片"，或粘贴/上传材料并索要问答卡片时触发。
 metadata:
   category: study-skills
 ---
 
-# Skill: Flashcard Forge
+# Skill: Flashcard Forge（闪卡锻造器）
 
-## Visão geral
+## 概述
 
-Flashcard Forge lê qualquer material de estudo (texto colado, PDF, anotações) e extrai os pontos que realmente
-valem virar flashcard — não frases inteiras copiadas, mas perguntas que testam se o conceito foi entendido.
-Resolve o trabalho manual e chato de transformar conteúdo em cartões, que é o que mais desanima quem quer estudar
-por repetição espaçada.
+Flashcard Forge 阅读任何学习材料（粘贴的文本、PDF、笔记），提取出真正值得做成闪卡的要点——不是照抄整句话，而是能检验概念是否被理解的问题。它解决了把内容变成卡片这件又手动又枯燥的活儿，而这正是让想用间隔重复学习的人最容易打退堂鼓的地方。
 
-## Passo 1 — Ler e identificar os pontos-chave
+## 步骤 1 — 阅读并找出关键点
 
-Leia o material e separe fatos, definições, relações causa-efeito e exemplos que merecem virar cartão — ignore
-frases de transição e contexto que não precisa ser memorizado.
+阅读材料，挑出值得成卡的事实、定义、因果关系和例子——忽略过渡句和无需记忆的背景。
 
-## Passo 2 — Gerar os cartões
+## 步骤 2 — 生成卡片
 
-Para cada ponto, gere uma pergunta clara de um lado e uma resposta curta e precisa do outro. Varie o tipo de
-pergunta (definição, "por quê", comparação, aplicação) para não virar uma lista monótona de "o que é X".
+对每个要点，一面生成清晰的问题，另一面生成简短准确的答案。变换问题类型（定义、"为什么"、比较、应用），避免变成单调的"X 是什么"列表。
 
-## Passo 3 — Evitar cartões ruins
+## 步骤 3 — 剔除劣质卡片
 
-Descarte perguntas ambíguas (mais de uma resposta correta possível) e cartões redundantes entre si. Se o material
-tiver profundidade suficiente, prefira menos cartões bons a muitos cartões fracos.
+丢弃含义模糊的问题（可能有多个正确答案）以及彼此冗余的卡片。如果材料足够有深度，宁要少量好卡片，也不要一堆弱卡片。
 
-## Passo 4 — Entregar em formato usável
+## 步骤 4 — 以可用格式交付
 
-Entregue o baralho como tabela (pergunta | resposta) pronta para importar em qualquer app de flashcards, ou como
-texto simples se o usuário preferir revisar direto na conversa.
+把整套卡片以表格形式（问题 | 答案）交付，可直接导入任何闪卡应用；若用户更想直接在对话中复习，则用纯文本形式。
 
-## Coisas que esta skill nunca faz
+## 这个 skill 从不做的事
 
-- Nunca inventa fatos que não estavam no material original.
-- Nunca gera cartões vagos demais para ter resposta objetiva.
+- 从不编造原始材料中不存在的事实。
+- 从不生成模糊到无法给出客观答案的卡片。

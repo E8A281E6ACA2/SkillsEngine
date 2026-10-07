@@ -1,72 +1,71 @@
 ---
 name: reference-analysis
-description: Analisa as referências bibliográficas de um texto acadêmico (artigo, resumo expandido, TCC, dissertação etc.) SEMPRE em conjunto com o texto-base que as cita. Use esta skill sempre que o usuário pedir para "analisar as referências", "dizer quais referências são úteis para entender o trabalho", "ver o que falta para o artigo ficar pronto", "preparar pauta de reunião de alinhamento" sobre um texto acadêmico, "avaliar se uma referência/livro/autor cabe no trabalho", ou pedir o link/fonte de uma referência citada. Também ative quando o usuário colar um artigo/resumo expandido e pedir uma leitura crítica do estado do trabalho e da literatura usada. Esta skill NUNCA analisa uma lista de referências isolada sem o texto-base — sempre cruza referência com o papel que ela exerce dentro do argumento do texto.
+description: 分析一篇学术文本（论文、扩展摘要、毕业设计、学位论文等）的参考文献，且**始终结合引用它们的正文一起分析**。当用户要求"分析参考文献""指出哪些文献对理解工作是必要的""看看论文还差什么才能完成""准备一次对齐/指导会议的议程"，或"评估某篇文献/书籍/作者是否适合纳入工作"，或索取某条被引文献的链接/来源时，使用本 skill。当用户粘贴一篇论文/扩展摘要并希望对其工作进展和所引文献做批判性阅读时也激活。本 skill **从不**在脱离正文的情况下分析一份孤立的参考文献列表——它总是把文献与它在正文论证中所起的作用相互对照。
 metadata:
   category: study-skills
 ---
 
-# Reference Analysis
+# Reference Analysis（参考文献分析）
 
-Esta skill estrutura como analisar as referências bibliográficas de um texto acadêmico **sempre em conjunto com o texto-base** (o artigo, resumo expandido, projeto, TCC etc. que cita essas referências). A referência nunca é avaliada isoladamente — o que importa é o papel que ela exerce dentro do argumento do texto-base.
+本 skill 说明了如何分析一篇学术文本的参考文献，**始终结合引用它们的正文**（即引用这些文献的论文、扩展摘要、项目、毕业设计等）。文献从不被孤立评估——真正重要的是它在正文论证中所扮演的角色。
 
-Use esta skill quando o usuário:
-- Pedir para identificar quais referências são essenciais para entender o trabalho
-- - Pedir o que falta para o artigo/texto ficar pronto (gaps metodológicos, teóricos, de dados)
-  - - Estiver se preparando para uma reunião de alinhamento/orientação e precisar de pauta
-    - - Pedir o link/fonte de uma referência específica citada no texto
-      - - Perguntar se um livro/autor/referência nova "cabe" ou "convém" ser adicionado ao trabalho
-       
-        - ## Processo
-       
-        - ### 1. Ler o texto-base com atenção structural
-       
-        - Antes de tocar nas referências, mapeie a estrutura do texto-base:
-        - - Qual é a pergunta/hipótese central?
-          - - Quais são as seções (introdução, métodos, resultados, considerações finais)?
-            - - Quais variáveis, dados e fontes empíricas sustentam os números citados?
-              - - Qual o estágio do texto: ideia inicial, resumo expandido, working paper, artigo completo, versão final?
-               
-                - Sinais de que o texto está incompleto (e que vale procurar): menções a análises "preliminares", "versões em desenvolvimento incorporarão...", resultados sem tabelas/figuras correspondentes, métodos descritos mas não executados.
-               
-                - ### 2. Classificar cada referência por papel funcional
-               
-                - Não trate as referências como uma lista plana. Categorize cada uma segundo a função que exerce no texto-base:
-               
-                - - **Fonte de dados empíricos** — de onde vêm os números, variáveis, estatísticas citadas no texto. Geralmente são notas técnicas, relatórios oficiais, bases de dados. Sem entender essas, não se entende de onde vêm as variáveis do estudo.
-                  - - **Arcabouço teórico estruturante** — modelos/conceitos citados na introdução E retomados nas considerações finais; são o "fio condutor" do argumento. Geralmente poucas (1-3), mas indispensáveis.
-                    - - **Apoio complementar/contextual** — dá suporte a um ponto específico (causa física de um fenômeno, paralelo internacional, dado regional de contexto) mas não é indispensável para entender a espinha dorsal do argumento.
-                      - - **Referência decorativa ou não utilizada** — aparece na lista de referências mas não é de fato citada/usada no corpo do texto, ou é citação solta sem conexão clara com o argumento. Vale sinalizar como possível erro/sobra a ser cortada.
-                       
-                        - Ao apresentar ao usuário, sempre explique o PORQUÊ de cada referência ser essencial ou complementar — não basta listar, é preciso justificar a partir do papel que ela cumpre no argumento.
-                       
-                        - ### 3. Verificar externamente quando necessário
-                       
-                        - Se uma referência, dado ou afirmação do texto-base parecer precisar de verificação (números, existência da fonte, atualidade do dado, ou se o usuário pedir o link/fonte de algo citado), use web_search/web_fetch para confirmar antes de responder. Não invente links ou DOIs.
-                       
-                        - Para localizar links de fontes acadêmicas:
-                        - - Notas técnicas de institutos de pesquisa (IPEA, IBGE etc.) geralmente têm página de repositório institucional — buscar pelo título exato + nome do instituto.
-                          - - Livros comerciais (editoras como Routledge, Cultrix etc.) não têm PDF gratuito legítimo na maioria dos casos — ofereça a página oficial da editora, Google Books, ou sugira verificar acesso institucional (CAPES, bibliotecas universitárias) em vez de indicar PDFs piratas/scribd/sites não oficiais.
-                            - - Se o link direto falhar ou não carregar, ofereça ao usuário uma string de busca pronta para colar no Google em vez de insistir no mesmo link.
-                             
-                              - ### 4. Avaliar pedidos de nova referência ("isso cabe no trabalho?")
-                             
-                              - Quando o usuário perguntar se vale adicionar uma referência nova (livro, autor, conceito):
-                             
-                              - 1. Identifique a escola/corrente teórica de origem da referência proposta.
-                                2. 2. Compare com a escola/corrente já adotada no texto-base.
-                                   3. 3. Verifique coerência: a referência nova reforça, complementa ou **contradiz** o enquadramento teórico já em uso?
-                                      4. 4. Se houver contradição ou tensão teórica (ex.: uma obra de eficiência de mercado/eco-eficiência empresarial vs. um texto fundamentado em economia política ecológica/justiça ambiental, que tipicamente critica esse tipo de abordagem), explique a incompatibilidade claramente e desaconselhe — não baseie a recomendação só no tema ("ambos falam de meio ambiente"), mas na lógica argumentativa de cada corrente.
-                                         5. 5. Se for compatível, sugira opcionalmente autores/obras da mesma linha já adotada que reforçariam a fundamentação sem introduzir ruído teórico.
-                                           
-                                            6. ### 5. Montar a saída
-                                           
-                                            7. Estruture a resposta em três blocos, sempre nesta ordem:
-                                           
-                                            8. **A. Referências essenciais para entender o trabalho** — separadas por papel funcional (dados empíricos vs. arcabouço teórico), com justificativa de cada uma.
-                                           
-                                            9. **B. O que falta para o texto ficar pronto** — gaps concretos identificados a partir dos próprios sinais do texto (análises prometidas mas não feitas, tabelas/figuras ausentes, testes de robustez pendentes, revisão de literatura rasa, dados ainda não disponíveis, referências citadas na bibliografia mas não usadas no corpo do texto).
-                                           
-                                            10. **C. Pauta sugerida** (quando o contexto for reunião de alinhamento/orientação) — lista objetiva de decisões e responsabilidades a definir, não apenas tarefas técnicas.
-                                           
-                                            11. Mantenha tom direto e prático — quem está pedindo isso geralmente está sob pressão de prazo (reunião no dia seguinte, entrega próxima) e quer uma leitura rápida e acionável, não um ensaio.
-                                            12. 
+在以下情况使用本 skill：
+- 用户要求识别哪些文献对理解该工作是必要的
+- 用户询问论文/文本还差什么才能完成（方法论、理论、数据层面的缺口）
+- 用户正在准备一次对齐/指导会议，需要一份议程
+- 用户索取正文中某条被引文献的链接/来源
+- 用户询问某本书/作者/新文献是否"适合"或"值得"加入工作
+
+## 流程
+
+### 1. 带着结构意识阅读正文
+
+在动参考文献之前，先梳理正文的结构：
+- 核心问题/假设是什么？
+- 有哪些部分（引言、方法、结果、结论）？
+- 哪些变量、数据和实证来源支撑了文中引用的数字？
+- 文本处于什么阶段：初步想法、扩展摘要、工作论文、完整论文、终稿？
+
+提示文本尚不完整的信号（值得追查）：出现"初步"分析、"后续版本将纳入……"之类的表述、结果没有对应的表格/图、描述了方法却未执行。
+
+### 2. 按功能角色给每条文献分类
+
+不要把参考文献当成一份平铺的清单。根据每条文献在正文中所起的作用分类：
+
+- **实证数据来源** —— 文中数字、变量、统计数据的出处。通常是技术说明、官方报告、数据库。不理解这些，就不知道研究变量从何而来。
+- **结构性理论框架** —— 在引言中被引用、并在结论中再次提及的模型/概念；是论证的"主线"。通常数量很少（1-3 条），但不可或缺。
+- **补充/背景性支撑** —— 支撑某个具体论点（某现象背后的物理原因、国际对照、区域性背景数据），但对理解论证主干并非不可或缺。
+- **装饰性或未被使用的文献** —— 出现在文献列表中，但正文实际并未引用/使用，或是与论证没有明确关联的孤立引用。值得标记为可能的错误/可删除的冗余。
+
+向用户呈现时，始终解释每条文献为何是必要或补充的——仅仅列举不够，必须依据它在论证中承担的角色来说明理由。
+
+### 3. 必要时做外部核实
+
+如果正文中的某条文献、数据或论断似乎需要核实（数字、来源是否存在、数据时效性，或用户索取某条被引内容的链接/来源），先使用 web_search/web_fetch 确认后再回答。不要编造链接或 DOI。
+
+查找学术来源链接的方法：
+- 研究机构的技术说明（IPEA、IBGE 等）通常有机构知识库页面——用精确标题 + 机构名称搜索。
+- 商业书籍（Routledge、Cultrix 等出版社）在多数情况下没有合法的免费 PDF——提供出版社官方页面、Google Books，或建议核查机构访问权限（CAPES、大学图书馆），而不要提供盗版 PDF/Scribd/非官方网站。
+- 如果直接链接失效或打不开，给用户一段可直接粘贴到 Google 的现成搜索串，而不是反复坚持同一个链接。
+
+### 4. 评估新增文献的请求（"这条适合纳入工作吗？"）
+
+当用户询问是否值得加入一条新文献（书、作者、概念）时：
+
+1. 识别所提议文献所属的学派/理论流派。
+2. 与正文已采用的学派/流派做比较。
+3. 核查一致性：这条新文献是强化、补充，还是**抵触**了正在使用的理论框架？
+4. 如果存在矛盾或理论张力（例：一部主张市场效率/企业生态效率的著作，对比一篇基于生态政治经济学/环境正义、通常批判此类方法的文本），清楚地说明其不兼容并给出否定建议——不要只依据主题（"二者都在谈环境"）来推荐，而要依据各流派的论证逻辑。
+5. 如果相容，可选地建议同一路线下已有的作者/著作，它们能在不引入理论杂音的前提下强化论证基础。
+
+### 5. 组织输出
+
+按以下三个板块、始终按此顺序组织回答：
+
+**A. 理解该工作所必需的文献** —— 按功能角色分开（实证数据 vs. 理论框架），每条附理由。
+
+**B. 文本完成还差什么** —— 依据文本自身的信号识别出的具体缺口（承诺却未做的分析、缺失的表格/图、待做的稳健性检验、过于浅显的文献综述、尚未获得的数据、列在文献表中却未在正文中使用的参考文献）。
+
+**C. 建议议程**（当场景为对齐/指导会议时）—— 一份需确定的事项与责任清单，而不只是技术任务。
+
+保持直接、务实的语调——提出请求的人通常面临截止压力（第二天要开会、临近交付），想要的是一份快速、可执行的解读，而不是一篇长文。

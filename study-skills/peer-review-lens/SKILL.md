@@ -1,43 +1,35 @@
 ---
 name: peer-review-lens
 description: >
-  Dá feedback estruturado em um trabalho acadêmico (artigo, monografia, TCC) como um revisor externo faria —
-  pontos fortes, fracos e perguntas que um avaliador levantaria. Ative quando o usuário disser "revisa meu
-  trabalho como se fosse um avaliador", "que perguntas uma banca faria sobre isso", ou pedir feedback crítico em
-  um texto acadêmico.
+  像外部审稿人那样，对学术作品（论文、专著、毕业设计）给出结构化反馈——优点、不足，以及评审可能提出的问题。
+  当用户说"像评审一样审我的作品""答辩老师会问哪些问题"，或要求对某篇学术文本给出批判性反馈时触发。
 metadata:
   category: study-skills
 ---
 
-# Skill: Peer Review Lens
+# Skill: Peer Review Lens（同行评审视角）
 
-## Visão geral
+## 概述
 
-Peer Review Lens simula o tipo de leitura crítica que um revisor de artigo ou membro de banca faz — não é revisão
-gramatical, é avaliação de argumento: a metodologia se sustenta, as conclusões seguem dos dados apresentados, há
-lacunas que um avaliador rigoroso apontaria.
+Peer Review Lens 模拟论文审稿人或答辩委员那种批判性阅读——它不是语法校对，而是对论证的评估：方法论是否站得住、结论是否由所呈现的数据推出、是否有严谨评审者会指出的漏洞。
 
-## Passo 1 — Entender o objetivo do trabalho
+## 步骤 1 — 理解作品的目标
 
-Identifique a pergunta de pesquisa ou tese central que o trabalho tenta sustentar, para avaliar tudo em relação a
-esse objetivo.
+找出作品试图支撑的核心研究问题或论点，以便以此为基准评估一切。
 
-## Passo 2 — Avaliar estrutura e argumento
+## 步骤 2 — 评估结构与论证
 
-Aponte: se a introdução justifica bem o problema, se a metodologia é adequada para responder a pergunta proposta,
-se as conclusões realmente seguem dos resultados apresentados (sem ir além do que os dados sustentam).
+指出：引言是否很好地论证了问题、方法论是否适合回答所提出的问题、结论是否真的由呈现的结果推出（不超出数据能支撑的范围）。
 
-## Passo 3 — Gerar as perguntas de uma banca
+## 步骤 3 — 生成答辩问题
 
-Liste 4-6 perguntas que um avaliador rigoroso provavelmente faria, focadas nos pontos mais frágeis do argumento —
-não perguntas genéricas, perguntas específicas ao que foi escrito.
+列出 4-6 个严谨评审者可能会问的问题，聚焦论证中最薄弱的环节——不是泛泛的问题，而是针对所写内容的具体问题。
 
-## Passo 4 — Separar crítico de construtivo
+## 步骤 4 — 区分批判性与建设性
 
-Organize o feedback em pontos fortes (o que já está sólido) e pontos a melhorar (com sugestão concreta de como
-fortalecer cada um), nunca só uma lista de problemas sem direção.
+把反馈整理为"优点"（已经扎实的部分）和"待改进"（附具体的强化建议），绝不只是一份没有方向的毛病清单。
 
-## Coisas que esta skill nunca faz
+## 这个 skill 从不做的事
 
-- Nunca reescreve o trabalho no lugar do usuário — dá feedback, quem decide e escreve é sempre ele.
-- Nunca inventa uma crítica só para parecer rigorosa — cada ponto vem de algo real no texto avaliado.
+- 从不替用户重写作品——它只给反馈，决定和写作的始终是用户本人。
+- 从不为了显得严谨而编造批评——每一点都来自所评文本中的真实内容。
