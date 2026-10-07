@@ -22,9 +22,18 @@ SkillsEngine/
 | `auto-test` | 自动生成测试 |
 | `auto-doc` | 自动生成文档 |
 
-### study-skills/（学习参考，13 个）
+### study-skills/（学习区，只阅读、不加载）
 
-收藏学术学习类 skill 作为写法范例，**刻意放在 `skills/` 之外**，因此不会被工具加载。清单见 [study-skills/README.md](./study-skills/README.md)。
+学习「怎么写 skill」的范例与资料合集，**刻意放在 `skills/` 之外**，因此不会被工具加载：
+
+| 子目录 | 内容 | 来源 |
+|--------|------|------|
+| `engineering/` | 25 个工程类 skill（开发/测试/评审/CI-CD/可观测性…） | addyosmani/agent-skills (MIT) |
+| `writing-skills/` | 如何写 skill 的方法论 + Anthropic 官方最佳实践 | obra/superpowers (MIT) |
+| `using-superpowers/` | skill 框架用法（上述方法的依赖） | obra/superpowers (MIT) |
+| 学术类 13 个目录 | 学术学习类范例（已译中文） | claude-skills-academic |
+
+完整清单、书籍与学习资源见 [study-skills/README.md](./study-skills/README.md)。
 
 > **为什么生效的 skill 必须扁平放 `skills/`**：实测（`claude -p`）Claude Code **只加载 `~/.claude/skills/` 的直接子目录**，嵌套在分类文件夹里的 skill 不会被发现。Codex 与 opencode 虽支持递归扫描，但为保持三工具一致，`skills/` 下不放分类子目录——要放**不生效**的范例，就放到 `study-skills/`。
 
