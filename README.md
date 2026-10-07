@@ -24,6 +24,8 @@ metadata:
 
 > **为什么不建 `study-skills/` 物理子目录**：实测（`claude -p "/skills"`）Claude Code **只加载 `~/.claude/skills/` 的直接子目录**，嵌套在分类文件夹里的 skill 不会被发现。Codex 与 opencode 支持递归扫描，但为了三个工具一致可用，统一采用扁平结构 + `metadata.category` 标签做分类。
 
+学术学习类的浏览索引见 **[`study-skills/README.md`](./study-skills/README.md)**（仅索引，不含 skill）。
+
 
 ## 加载方式
 
